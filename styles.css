@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(to bottom right, #b2ebf2, #00e5ff, #00b8d4, #006064);
+    background-size: cover;
+    color: #333;
+    font-family: 'DotGothic16', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('watercolor-texture.png') repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+.title-container {
+    position: relative;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: #007bff;
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5), 0 0 30px rgba(0, 123, 255, 0.3);
+    margin: 0;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(0, 123, 255, 0.3) 50%, rgba(0, 123, 255, 0.3) 75%, transparent 75%, transparent);
+    background-size: 28.28px 28.28px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+main {
+    padding: 160px 20px 20px 20px; /* ヘッダーの高さ分のパディングを追加 */
+}
+
+section {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+p {
+    color: #333;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#commentForm {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#commentText {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#commentText::placeholder {
+    color: #bbb;
+}
+
+#commentText:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#commentList {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.recommended-game-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.recommended-game-images img {
+    margin: 10px;
+    max-width: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.recommended-game-images img:hover {
+    transform: scale(1.1);
+}
+
+.character-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.character-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.character-card img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.more-button-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.more-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #0056b3;
+}
+
+.gif-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gif-image {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

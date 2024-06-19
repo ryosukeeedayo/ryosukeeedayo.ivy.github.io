@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム紹介サイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <h1 class="site-title">ゲーム紹介サイト</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#profile">プロフィール</a></li>
+                <li><a href="#recommended-games">僕のおすすめゲーム</a></li>
+                <li><a href="#characters">キャラ紹介</a></li>
+                <li><a href="#games">みんなの好きなゲーム紹介</a></li>
+                <li><a href="#comments">コメント</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h1>ようこそ！ゲーム紹介サイトへ</h1>
+            <p>ここでは私の好きなゲームやその魅力を紹介します。</p>
+        </section>
+        
+        <section id="recommended-games">
+            <h2>僕のおすすめゲーム</h2>
+            <div class="recommended-game-images">
+                <img src="recommended_game1.jpg" alt="おすすめゲーム1">
+                <img src="recommended_game2.jpg" alt="おすすめゲーム2">
+                <!-- 他のおすすめゲームの画像も追加 -->
+            </div>
+        </section>
+
+        <section id="characters">
+            <h2>キャラ紹介</h2>
+            <div class="character-container">
+                <div class="character-card">
+                    <img src="character1.jpg" alt="キャラクター1">
+                    <h3>キャラクター1</h3>
+                    <p>キャラクター1の紹介文です。魅力的な特徴や能力について説明します。</p>
+                </div>
+                <div class="character-card">
+                    <img src="character2.jpg" alt="キャラクター2">
+                    <h3>キャラクター2</h3>
+                    <p>キャラクター2の紹介文です。魅力的な特徴や能力について説明します。</p>
+                </div>
+                <!-- 他のキャラクターカードも追加 -->
+            </div>
+            <div class="more-button-container">
+                <a href="index1.html" class="more-button">もっと見る</a>
+            </div>
+        </section>
+
+        <section id="game-info">
+            <h2>ゲームの説明とGIF画像</h2>
+            <p>ここではゲームの詳細な説明と、そのゲームのGIF画像を紹介します。</p>
+            <div class="gif-container">
+                <img src="game1.gif" alt="ゲームGIF1" class="gif-image">
+                <img src="game2.gif" alt="ゲームGIF2" class="gif-image">
+                <img src="game3.gif" alt="ゲームGIF3" class="gif-image">
+            </div>
+        </section>
+        
+        <section id="games">
+            <h2>みんなの好きなゲーム紹介</h2>
+            <div class="game-images">
+                <img src="screenshot1.jpg" alt="ゲームスクリーンショット1">
+                <img src="screenshot2.jpg" alt="ゲームスクリーンショット2">
+                <!-- 他のゲームの画像も追加 -->
+            </div>
+        </section>
+        
+        <section id="comments">
+            <h2>コメント</h2>
+            <form id="commentForm">
+                <textarea id="commentText" rows="4" cols="50" placeholder="コメントを入力してください"></textarea><br>
+                <button type="submit">送信</button>
+            </form>
+            <div id="commentList">
+                <!-- コメントがここに表示されます -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©2024 崎野綾佑</p>
+    </footer>
+</body>
+</html>
