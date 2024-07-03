@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="https://cdn.pixabay.com/video/2019/08/17/26097-357512275_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
     <header>
         <div class="title-container">
             <h1 class="site-title">ゲーム紹介サイト</h1>
@@ -14,11 +20,9 @@
         <nav>
             <ul>
                 <li><a href="#home">ホーム</a></li>
-                <li><a href="#profile">プロフィール</a></li>
                 <li><a href="#recommended-games">僕のおすすめゲーム</a></li>
-                <li><a href="#characters">キャラ紹介</a></li>
-                <li><a href="#games">みんなの好きなゲーム紹介</a></li>
-                <li><a href="#comments">コメント</a></li>
+                <li><a href="#characters">ゲーム説明</a></li>
+                <li><a href="#last">まとめ</a></li>
             </ul>
         </nav>
     </header>
@@ -31,26 +35,23 @@
         
         <section id="recommended-games">
             <h2>僕のおすすめゲーム</h2>
+            <p>僕がおすすめするゲームはVALORANTです。</p>
             <div class="recommended-game-images">
-                <img src="recommended_game1.jpg" alt="おすすめゲーム1">
-                <img src="recommended_game2.jpg" alt="おすすめゲーム2">
+                <img src="images/varo.jpg" alt="おすすめのゲーム">
                 <!-- 他のおすすめゲームの画像も追加 -->
             </div>
         </section>
 
         <section id="characters">
-            <h2>キャラ紹介</h2>
+            <h2>どんなゲーム？</h2>
             <div class="character-container">
                 <div class="character-card">
-                    <img src="character1.jpg" alt="キャラクター1">
-                    <h3>キャラクター1</h3>
-                    <p>キャラクター1の紹介文です。魅力的な特徴や能力について説明します。</p>
+                    <img src="images/v.jpg" alt="キャラクター1">
+                    <h3></h3>
+                    <p>ヴァロラントは、e-Sports大会でもっとも注目され盛り上がりを見せている「League of Legends」を世に送り出した「ライアットゲームズ」が</p>
+                    <p>開発・運営を手掛けるキャラクターベースのFPS。 5人1組でチームを組み、攻撃側と防御側に分かれて5vs5で各ラウンドを戦っていくゲーム。</p>
                 </div>
-                <div class="character-card">
-                    <img src="character2.jpg" alt="キャラクター2">
-                    <h3>キャラクター2</h3>
-                    <p>キャラクター2の紹介文です。魅力的な特徴や能力について説明します。</p>
-                </div>
+         
                 <!-- 他のキャラクターカードも追加 -->
             </div>
             <div class="more-button-container">
@@ -58,33 +59,16 @@
             </div>
         </section>
 
-        <section id="game-info">
-            <h2>ゲームの説明とGIF画像</h2>
-            <p>ここではゲームの詳細な説明と、そのゲームのGIF画像を紹介します。</p>
+        <section id="last">
+            <h2></h2>
             <div class="gif-container">
-                <img src="game1.gif" alt="ゲームGIF1" class="gif-image">
-                <img src="game2.gif" alt="ゲームGIF2" class="gif-image">
-                <img src="game3.gif" alt="ゲームGIF3" class="gif-image">
+                <img src="images/wingman.gif" alt="ゲームGIF1" class="gif-image">
+                <img src="images/wingman.gif" alt="ゲームGIF2" class="gif-image">
+                <img src="images/wingman.gif" alt="ゲームGIF3" class="gif-image">
             </div>
-        </section>
-        
-        <section id="games">
-            <h2>みんなの好きなゲーム紹介</h2>
-            <div class="game-images">
-                <img src="screenshot1.jpg" alt="ゲームスクリーンショット1">
-                <img src="screenshot2.jpg" alt="ゲームスクリーンショット2">
-                <!-- 他のゲームの画像も追加 -->
-            </div>
-        </section>
-        
-        <section id="comments">
-            <h2>コメント</h2>
-            <form id="commentForm">
-                <textarea id="commentText" rows="4" cols="50" placeholder="コメントを入力してください"></textarea><br>
-                <button type="submit">送信</button>
-            </form>
-            <div id="commentList">
-                <!-- コメントがここに表示されます -->
+            <div class="last">
+                <h1>まとめ</h1>
+                <p>キャラそれぞれに役割があって、いろんなキャラが活躍できるとてもいいゲームです。fpsをやったことがない人だったり、戦闘ゲームが苦手な人は手を出しにくいかもしれないですが、ぜひ一度やってみてほしいです。</p>
             </div>
         </section>
     </main>
